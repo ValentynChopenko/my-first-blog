@@ -1,0 +1,8 @@
+decorator==4.0.6
+Django==1.11.15
+ipython==2.4.1
+pexpect==4.0.1
+ptyprocess==0.5
+pytz==2018.5
+simplegeneric==0.8.1
+virtualenv==16.0.0
