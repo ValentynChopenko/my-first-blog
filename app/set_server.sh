@@ -5,6 +5,8 @@ export DJANGO_SUPERUSER_NAME="admin"
 export DJANGO_SUPERUSER_EMAIL="admin@gmail.com"
 export DJANGO_SUPERUSER_PASSWORD="djangoadmin"
 
+python manage.py migrate
+
 python -c "import os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 import django
