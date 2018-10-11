@@ -22,7 +22,7 @@ docker exec -it $NAME_DJANGOBLOG bash ./set_server.sh
 docker build -t nginx-dj:1.0 -f nginx/Dockerfile .
 
 # run nginx-server based on created image nginx-dj:1.0:
-docker run -d --name nginx -p 80:80 --link djangoblog:web nginx-dj:1.0 
+docker run -d --name nginx -p 80:80 --link $NAME_DJANGOBLOG:web nginx-dj:1.0 
 
 # delete application container:
 # docker rm --force $NAME_DJANGOBLOG
