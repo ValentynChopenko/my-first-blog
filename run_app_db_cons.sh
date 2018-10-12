@@ -2,7 +2,7 @@
 export NAME_DJANGOBLOG=djangoblog
 
 # run container of mysql database, version 5.7:
-docker run -d -p 3306:3306 --name db --restart always\
+docker run -d -p 3306:3306 --name db --restart always -v /opt/mysql-dj/data:/var/lib/mysql\
     -e MYSQL_ROOT_PASSWORD=mysqladmin \
     -e MYSQL_USER=django \
     -e MYSQL_PASSWORD=mysqladmin \
