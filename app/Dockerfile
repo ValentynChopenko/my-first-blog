@@ -1,5 +1,5 @@
 
-FROM python:3
+FROM python:3.5
 MAINTAINER chopenkoval@gmail.com
 
 RUN apt-get update \
