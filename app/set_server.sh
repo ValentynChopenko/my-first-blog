@@ -4,7 +4,7 @@ export DJANGO_DB_NAME="default"
 export DJANGO_SUPERUSER_NAME="admin"
 export DJANGO_SUPERUSER_EMAIL="admin@gmail.com"
 export DJANGO_SUPERUSER_PASSWORD="djangoadmin"
-echo 'Hello changes, guys!'
+echo 'Hello changes of all, guys!'
 
 python -c "import os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
